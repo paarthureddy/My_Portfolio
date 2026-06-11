@@ -10,6 +10,8 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+public/assets/drone.glb
+push.ps1
 *.local
 
 # Editor directories and files

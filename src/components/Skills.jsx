@@ -14,13 +14,15 @@ const SKILL_CATS = [
     tags: [
       { label: 'React.js', cls: 'green-tag' }, { label: 'Node.js', cls: 'black-tag' },
       { label: 'Express.js', cls: 'yellow-tag' }, { label: 'FastAPI', cls: 'pink-tag' },
-      { label: 'Socket.IO', cls: 'white-tag' },
+      { label: 'Socket.IO', cls: 'white-tag' }, { label: 'Next.js', cls: 'black-tag' },
+      { label: 'Tailwind CSS', cls: 'green-tag' }, { label: 'GraphQL', cls: 'yellow-tag' },
     ],
   },
   {
     title: 'Databases',
     tags: [
       { label: 'MongoDB', cls: 'green-tag' }, { label: 'PostgreSQL', cls: 'yellow-tag' },
+      { label: 'Redis', cls: 'pink-tag' }, { label: 'Firebase', cls: 'white-tag' },
     ],
   },
   {
@@ -28,6 +30,7 @@ const SKILL_CATS = [
     tags: [
       { label: 'Git / GitHub', cls: 'black-tag' }, { label: 'Docker', cls: 'white-tag' },
       { label: 'Linux', cls: 'yellow-tag' }, { label: 'Postman', cls: 'pink-tag' },
+      { label: 'AWS / GCP', cls: 'green-tag' }, { label: 'Kubernetes', cls: 'black-tag' },
     ],
   },
   {
@@ -35,7 +38,7 @@ const SKILL_CATS = [
     tags: [
       { label: 'Full-Stack Dev', cls: 'green-tag' }, { label: 'Machine Learning', cls: 'yellow-tag' },
       { label: 'REST APIs', cls: 'white-tag' }, { label: 'IoT / Edge', cls: 'pink-tag' },
-      { label: 'DSA', cls: 'black-tag' },
+      { label: 'DSA', cls: 'black-tag' }, { label: 'System Design', cls: 'green-tag' },
     ],
   },
 ]

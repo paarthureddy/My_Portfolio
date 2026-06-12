@@ -436,10 +436,10 @@ img { display: block; max-width: 100%; }
   overflow: hidden;
 }
 
-.card-green:hover  { background: var(--green);  transform: translateY(-10px); box-shadow: 0 16px 0 var(--black); }
-.card-yellow:hover { background: var(--yellow); transform: translateY(-10px); box-shadow: 0 16px 0 var(--black); }
-.card-pink:hover   { background: var(--pink);   transform: translateY(-10px); box-shadow: 0 16px 0 var(--black); color: var(--white); }
-.card-dark:hover   { background: var(--black);  transform: translateY(-10px); box-shadow: 0 16px 0 var(--yellow); color: var(--white); }
+.card-green:hover  { background: var(--green);  transform: translateY(-8px) rotate(3deg) scale(1.02); box-shadow: -8px 12px 0 var(--black); }
+.card-yellow:hover { background: var(--yellow); transform: translateY(-8px) rotate(-3deg) scale(1.02); box-shadow: 8px 12px 0 var(--black); }
+.card-pink:hover   { background: var(--pink);   transform: translateY(-8px) rotate(3deg) scale(1.02); box-shadow: -8px 12px 0 var(--black); color: var(--white); }
+.card-dark:hover   { background: var(--black);  transform: translateY(-8px) rotate(-3deg) scale(1.02); box-shadow: 8px 12px 0 var(--yellow); color: var(--white); }
 
 .card-arrow-btn {
   position: absolute;

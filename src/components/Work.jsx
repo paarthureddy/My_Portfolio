@@ -7,6 +7,7 @@ const PROJECTS = [
     tag: 'REAL-TIME · WEB APP',
     title: 'Digital Collaborative Canvas',
     preview: 'green-preview',
+    image: '/hive_board.png',
     initials: 'DC',
     desc: 'Real-time collaborative whiteboard with live drawing sync, multi-user sessions, and persistent canvas storage. Built with Socket.IO + TypeScript + MongoDB.',
     link: 'https://github.com/paarthureddy',
@@ -27,6 +28,7 @@ const PROJECTS = [
     tag: 'ENTERPRISE · FULLSTACK',
     title: 'Workflow Automation Platform',
     preview: 'pink-preview',
+    image: '/poc_wbce.png',
     initials: 'WA',
     desc: 'PoC workflow automation platform for Tribli Deeptech — managing client interactions, task assignments, and business process execution with RESTful backend services.',
     link: 'https://github.com/paarthureddy',
@@ -37,6 +39,7 @@ const PROJECTS = [
     tag: 'AI · HACKATHON',
     title: 'RAG Funding Decision AI',
     preview: 'dark-preview',
+    image: '/rag_castesearch.png',
     initials: 'AI',
     desc: 'Retrieval-Augmented Generation AI system for funding decision simulation with explainable recommendations. Finalist at AIverse Hackathon, Anokha 2026.',
     link: 'https://github.com/paarthureddy',
@@ -125,8 +128,12 @@ export default function Work() {
           >
             <div className="work-card-tag">{p.tag}</div>
             <h3 className="work-card-title">{p.title}</h3>
-            <div className={`work-card-preview ${p.preview}`}>
-              <span className="preview-initials">{p.initials}</span>
+            <div className={`work-card-preview ${p.preview}`} style={p.image ? { padding: 0, overflow: 'hidden' } : {}}>
+              {p.image ? (
+                <img src={p.image} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              ) : (
+                <span className="preview-initials">{p.initials}</span>
+              )}
             </div>
             <p className="work-card-desc">{p.desc}</p>
             <div className="card-arrow-btn" aria-label="View on GitHub">↗</div>
